@@ -1,0 +1,14 @@
+{
+  "name": "hugh-learning-2019011601",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^1.0.0"
+  }
+}
