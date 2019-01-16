@@ -7,6 +7,7 @@ let pathToClean = [
 ];
 
 let config = {
+    mode: "development",
     entry: path.join(__dirname , '/src') + '/index.js',
     output: {
         path: path.join(__dirname , '/dist'),
@@ -20,7 +21,11 @@ let config = {
                 use: {
                     loader: 'babel-loader'
                 }
-            }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
         ]
     },
     plugins: [
@@ -28,7 +33,10 @@ let config = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname , '/public') + '/index.html',
         })
-    ]
+    ],
+    devServer: {
+        port: '8081'
+    }
 };
 
 module.exports = config;

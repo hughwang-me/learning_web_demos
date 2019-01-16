@@ -1,10 +1,9 @@
-console.log('开始');
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import CommonLayout from './layout/CommonLayout';
+
 ReactDOM.render(
-    <h1>Hello, world!</h1>,
+    <CommonLayout/>,
     document.getElementById('root')
 );
-console.log('结束');
