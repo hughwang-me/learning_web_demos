@@ -4,10 +4,17 @@ import { DatePicker } from 'antd';
 
 class CommonLayout extends React.Component {
 
+    constructor(props){
+        super(props)
+        this.state = {
+            name : 'wanghuan'
+        }
+    }
+
     render() {
 
         return <div>
-            王欢123
+            你好: {this.state.name}
             <DatePicker/>
         </div>
     }
