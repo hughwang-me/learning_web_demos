@@ -14,7 +14,7 @@ let config = {
         filename: '[hash].bundle.js',
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['' , '.js' , '.jsx']
     },
     module: {
         rules: [
@@ -24,11 +24,7 @@ let config = {
                 use: {
                     loader: 'babel-loader'
                 }
-            },
-            {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
-            },
+            }
         ]
     },
     plugins: [
