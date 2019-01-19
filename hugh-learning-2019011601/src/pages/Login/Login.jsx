@@ -13,7 +13,7 @@ class Login extends React.Component {
     render() {
 
         return <div>
-            login page123
+            login page
         </div>
     }
 }

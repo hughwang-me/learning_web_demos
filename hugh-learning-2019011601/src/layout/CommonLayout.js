@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import { DatePicker } from 'antd';
 import StorageUtil from '../utils/StorageUtil';
 import LogUtil from '../utils/LogUtil';
+import TextUtil from '../utils/TextUtil';
 
 // import NotFound from '../pages/NotFound';
 import Login from '../pages/Login';
-
 import Test from './Test.jsx';
 
 class CommonLayout extends React.Component {
@@ -59,9 +59,14 @@ class CommonLayout extends React.Component {
 
     render() {
         LogUtil.debug('CommonLayout -> render');
+        let div;
+        if(TextUtil.isEmpty(this.state.account)){
+            div = <Test/>;
+        }else {
+            div = <Login/>;
+        }
         return <div>
-            <Test/>
-            <Login/>
+            { div }
             <DatePicker/>
         </div>
     }
