@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component , Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
 import LogUtil from '../../utils/LogUtil';
@@ -62,7 +62,7 @@ class TodoList extends Component {
     }
 
     render() {
-        return <div>
+        return <Fragment>
             <div>
                 <Input
                     className='addInput'
@@ -81,7 +81,7 @@ class TodoList extends Component {
             {
                 this.getItems()
             }
-        </div>;
+        </Fragment>;
     }
 }
 
