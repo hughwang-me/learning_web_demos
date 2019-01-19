@@ -5,9 +5,17 @@ import LogUtil from './utils/LogUtil';
 import StorageUtil from './utils/StorageUtil';
 import TextUtil from './utils/TextUtil';
 
-import MainLayout from './layout/MainLayout';
+class Header extends Component{
 
-ReactDOM.render(
-    <MainLayout/> ,
-    document.querySelector('#root')
-);
+    constructor(){
+        super();
+    }
+
+    render(){
+        return <div>
+            Header
+        </div>;
+    }
+}
+
+export default Header;
