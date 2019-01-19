@@ -1,11 +1,7 @@
 
-let debug;
+let debug = true;
 
 class LogUtil {
-
-    constructor(){
-        debug = true;
-    }
 
     static debug(message){
         if(debug){

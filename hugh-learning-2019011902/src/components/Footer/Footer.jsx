@@ -5,19 +5,19 @@ import LogUtil from '../../utils/LogUtil';
 import StorageUtil from '../../utils/StorageUtil';
 import TextUtil from '../../utils/TextUtil';
 
-import './Header.css';
+import './Footer.css';
 
-class Header extends Component{
+class Footer extends Component{
 
     constructor(){
         super();
     }
 
     render(){
-        return <div className='header-content'>
-            Header
+        return <div className='footer-content'>
+            Footer
         </div>;
     }
 }
 
-export default Header;
+export default Footer;
