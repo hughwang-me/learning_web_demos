@@ -5,7 +5,7 @@ class Test extends React.Component {
 
     render() {
         return <div>
-            Test1234456789
+            Test Page
         </div>
     }
 }
