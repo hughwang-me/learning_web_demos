@@ -8,7 +8,7 @@ let pathToClean = [
 
 let config = {
     mode: "development",
-    entry: path.join(__dirname , '/src') + '/index.js.js',
+    entry: path.join(__dirname , '/src') + '/index.js',
     output: {
         path: path.join(__dirname , '/dist'),
         filename: '[hash].bundle.js',
@@ -34,7 +34,7 @@ let config = {
     plugins: [
         new CleanWebpackPlugin(pathToClean),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname , '/public') + '/index.js.html',
+            template: path.join(__dirname , '/public') + '/index.html',
         })
     ],
     devServer: {
