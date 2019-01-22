@@ -3,7 +3,7 @@ import React , { Component } from 'react';
 import { Input , Button , List } from "antd";
 
 import store from '../../store/store';
-import { getTodoListFromNetAction } from '../../store/actions';
+import { getTodoItemsFromNetAction } from '../../store/actions';
 
 import './TodoList.css';
 
@@ -23,7 +23,7 @@ class TodoList extends Component {
     }
 
     componentDidMount() {
-        store.dispatch(getTodoListFromNetAction());
+        store.dispatch(getTodoItemsFromNetAction());
     }
 
     render() {
