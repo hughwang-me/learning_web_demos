@@ -3,9 +3,12 @@ import ReactDom from 'react-dom'
 
 import TodoList from './pages/TodoList';
 
+import store from './store';
+import { Provider } from 'react-redux';
+
 ReactDom.render(
-    <Fragment>
+    <Provider store={store}>
         <TodoList/>
-    </Fragment>,
+    </Provider>,
     document.querySelector('#root')
 );
